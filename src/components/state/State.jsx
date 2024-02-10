@@ -15,7 +15,7 @@ const State = () => {
   const slabels = [];
   const sdata = [];
   const fetchData = async (place) => {
-    const url = `http://api.openweathermap.org/data/2.5/weather?appid=d0708f31eafc28b957db3c332fbde63f&q=${place}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?appid=d0708f31eafc28b957db3c332fbde63f&q=${place}`;
     try {
       const res = await axios.get(url);
       console.log(place, res.data);

@@ -21,7 +21,7 @@ const Home = () => {
   const [TEMPMIN, setTEMPMIN] = useState(true);
 
   const fetchData = async () => {
-    const url = `http://api.openweathermap.org/data/2.5/weather?appid=d0708f31eafc28b957db3c332fbde63f&q=${place}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?appid=d0708f31eafc28b957db3c332fbde63f&q=${place}`;
     try {
       const res = await axios.get(url);
       console.log(res.data);
@@ -49,7 +49,7 @@ const Home = () => {
   };
 
   const fetchDaily = async () => {
-    const url = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=d0708f31eafc28b957db3c332fbde63f`;
+    const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=d0708f31eafc28b957db3c332fbde63f`;
     try {
       const res = await axios.get(url);
       console.log(res.data);
