@@ -62,17 +62,17 @@ const State = () => {
 
   useEffect(() => {
     fetchData("mumbai");
-    fetchData("Bengaluru");
-    fetchData("kolkata");
-    fetchData("goa");
-    fetchData("kerala");
-    fetchData("chennai");
-    fetchData("delhi");
-    fetchData("lucknow");
-    fetchData("jaipur");
-    fetchData("indore");
-    fetchData("hyderabad");
-    fetchData("surat");
+    // fetchData("Bengaluru");
+    // fetchData("kolkata");
+    // fetchData("goa");
+    // fetchData("kerala");
+    // fetchData("chennai");
+    // fetchData("delhi");
+    // fetchData("lucknow");
+    // fetchData("jaipur");
+    // fetchData("indore");
+    // fetchData("hyderabad");
+    // fetchData("surat");
     getChartData(nlabels, sdata);
     getSChartdata(slabels, sdata);
   }, []);
