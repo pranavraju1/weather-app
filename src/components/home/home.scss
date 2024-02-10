@@ -1,0 +1,51 @@
+
+.homeContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  form{
+    width: 50%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    input{
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      font-size: 50px;
+    }
+    button{
+      height: 80% !important;
+      background-color: black;
+      color: white;
+      width: 200px;
+      border-radius: 2%;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  }
+  .details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .temp{
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      h1{
+        font-weight: bold;
+        // int{
+        //   color: red;
+        // }
+      }
+    }
+  }
+  int{
+    color: red;
+  }
+}

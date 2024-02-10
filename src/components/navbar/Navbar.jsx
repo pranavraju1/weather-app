@@ -1,0 +1,38 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { FaEarthAsia } from "react-icons/fa6";
+import "./styles.scss";
+const NavigationBar = () => {
+  return (
+    <Navbar
+      expand="lg"
+      className="bg-body-tertiary-dark navigation"
+      sticky="top"
+    >
+      <Container>
+        <Navbar.Brand href="/">
+          <FaEarthAsia className="logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav ">
+          <Nav className="me-auto links">
+            <Nav.Link href="/" className="link">
+              <u>
+                <i>Home</i>
+              </u>
+            </Nav.Link>
+            <Nav.Link href="/state" className="link">
+              <u>
+                <i>State</i>
+              </u>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+};
+
+export default NavigationBar;
