@@ -61,7 +61,7 @@ const State = () => {
   };
 
   useEffect(() => {
-    fetchData("mumbai");
+    // fetchData("mumbai");
     // fetchData("Bengaluru");
     // fetchData("kolkata");
     // fetchData("goa");
