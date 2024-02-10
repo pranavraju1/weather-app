@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import React from "react";
 import Home from "./components/home/Home";
 import NavigationBar from "./components/navbar/Navbar";

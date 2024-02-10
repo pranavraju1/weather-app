@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+*{
+  font-family: 'Roboto Mono';
+}
+
+
+@mixin mobile {
+  @media (max-width:738px){
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width:1024px){
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width:1366px){
+    @content;
+  }
+}
+

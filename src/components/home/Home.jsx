@@ -131,14 +131,11 @@ const Home = () => {
       <form onSubmit={handleForm}>
         <input
           type="text"
-          placeholder="place"
+          placeholder="Enter location..."
           name="place"
           value={inplace}
           onChange={(e) => setInPlace(e.target.value)}
         />
-        {/* <button type="submit" className="butt">
-          Submit
-        </button> */}
         <Button type="sumbit" variant="dark">
           Search
         </Button>
@@ -160,6 +157,7 @@ const Home = () => {
                 style={{ fontWeight: "bold" }}
                 variant="dark"
                 onClick={() => setTEMPM(!TEMPM)}
+                className="butto"
               >
                 {TEMPM ? "Fahrenheit" : "Celsius"}
               </Button>
@@ -178,19 +176,20 @@ const Home = () => {
                 style={{ fontWeight: "bold" }}
                 variant="dark"
                 onClick={() => setTEMPMIN(!TEMPMIN)}
+                className="butto"
               >
                 {TEMPMIN ? "Fahrenheit" : "Celsius"}
               </Button>
             </div>
             <div>
-              <h1>
+              <h1 className="others">
                 <b>
                   Weather Description: <int>{weatherDesc}</int>
                 </b>
               </h1>
             </div>
             <div>
-              <h1>
+              <h1 className="others">
                 <b>
                   Wind Speed: <int>{wind} m/s</int>
                 </b>

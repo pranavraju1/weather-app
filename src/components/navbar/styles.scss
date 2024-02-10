@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .navigation{
   .logo{
     // background-color: black !important;
@@ -8,11 +10,16 @@
   .links{
     position: absolute;
       right: 5%;
-      // left: 0;
-    .link{
-      color: black !important;
-      font-weight: bold;
-      font-size: 30px;
+      .link{
+        color: black !important;
+        font-weight: bold;
+        font-size: 30px;
+        @include mobile{
+          font-size: 25px;
+          background-color: pink;
+          padding: 40px;
+        }
+        
     }
   }
 }
