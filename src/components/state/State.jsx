@@ -141,7 +141,7 @@ const State = () => {
       } else if (foundItem.temp < 25 && foundItem.temp >= 20) {
         return { backgroundColor: "aqua" };
       } else if (foundItem.temp < 20) {
-        return { backgroundColor: "blue" };
+        return { backgroundColor: "rgba(0, 0, 255, 0.543)" };
       }
     } else {
       return { backgroundColor: "gray" };
@@ -438,11 +438,19 @@ const State = () => {
       </div>
       <div className="details">
         <div>
-          <h1>North India Temp</h1>
+          <h1>
+            <u>
+              <b>North India Temp</b>
+            </u>
+          </h1>
           {nchartData && <Doughnuts chartdata={nchartData} />}
         </div>
         <div>
-          <h1>South India Temp</h1>
+          <h1>
+            <u>
+              <b>South India Temp</b>
+            </u>
+          </h1>
           {schartData && <Doughnuts chartdata={schartData} />}
         </div>
       </div>
