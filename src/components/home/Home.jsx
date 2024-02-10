@@ -146,11 +146,13 @@ const Home = () => {
             <div className="temp">
               {TEMPM ? (
                 <h1>
-                  Maximum Temp in Celsius: <int>{tempC.max}</int>
+                  Maximum Temp in Celsius: {tempC.max}
+                  {/* Maximum Temp in Celsius: <int>{tempC.max}</int> */}
                 </h1>
               ) : (
                 <h1>
-                  Maximum Temp in Fahrenheit: <int>{tempF.max}</int>
+                  Maximum Temp in Fahrenheit: {tempF.max}
+                  {/* Maximum Temp in Fahrenheit: <int>{tempF.max}</int> */}
                 </h1>
               )}
               <Button
@@ -165,11 +167,13 @@ const Home = () => {
             <div className="temp">
               {TEMPMIN ? (
                 <h1>
-                  Minimum Temp in Celsius: <int>{tempC.min}</int>
+                  Minimum Temp in Celsius: {tempC.min}
+                  {/* Minimum Temp in Celsius: <int>{tempC.min}</int> */}
                 </h1>
               ) : (
                 <h1>
-                  Minimum Temp in Fahrenheit: <int>{tempF.min}</int>
+                  Minimum Temp in Fahrenheit: {tempF.min}
+                  {/* Minimum Temp in Fahrenheit: <int>{tempF.min}</int> */}
                 </h1>
               )}
               <Button
@@ -184,14 +188,16 @@ const Home = () => {
             <div>
               <h1 className="others">
                 <b>
-                  Weather Description: <int>{weatherDesc}</int>
+                  Weather Description: {weatherDesc}
+                  {/* Weather Description: <int>{weatherDesc}</int> */}
                 </b>
               </h1>
             </div>
             <div>
               <h1 className="others">
                 <b>
-                  Wind Speed: <int>{wind} m/s</int>
+                  Wind Speed: {wind} m/s
+                  {/* Wind Speed: <int>{wind} m/s</int> */}
                 </b>
               </h1>
             </div>
