@@ -13,18 +13,18 @@ const NavigationBar = () => {
       sticky="top"
     >
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand as={Link} to={"/"}>
           <FaEarthAsia className="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav ">
           <Nav className="me-auto links">
-            <Nav.Link href="/" className="link">
+            <Nav.Link as={Link} to={"/"} className="link">
               <u>
                 <i>Home</i>
               </u>
             </Nav.Link>
-            <Nav.Link href="/state" className="link">
+            <Nav.Link as={Link} to={"/state"} className="link">
               <u>
                 <i>State</i>
               </u>
